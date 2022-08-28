@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file>assets/app.ico</file>
+		<file>assets/page.ui</file>
+		<file>assets/window.ui</file>
+	</qresource>
+</RCC>

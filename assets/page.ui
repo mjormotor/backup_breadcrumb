@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Root</class>
+ <widget class="QWidget" name="Root">
+  <layout class="QVBoxLayout" name="RootLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMaximumSize</enum>
+   </property>
+   <item>
+    <widget class="TargetRootEdit" name="TargetRoot"/>
+   </item>
+   <item>
+    <widget class="BreadcrumbNavigation" name="Navigation" native="true">
+     <layout class="QHBoxLayout" name="NavigationLayout"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="TargetTreeView" name="TargetView">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BreadcrumbNavigation</class>
+   <extends>QWidget</extends>
+   <header>widgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TargetRootEdit</class>
+   <extends>QLineEdit</extends>
+   <header>widgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TargetTreeView</class>
+   <extends>QTreeView</extends>
+   <header>widgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
